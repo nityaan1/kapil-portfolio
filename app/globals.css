@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/*
+ * "The Signal" design system (docs/design-system.md).
+ * Dark-only by design — the concept is a network/signal visualization,
+ * so there is no light theme and no .dark class switching.
+ */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-heading: var(--font-sans);
+
+  --color-signal: var(--signal);
+  --color-warmth: var(--warmth);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Fixed radius scale (docs/design-system.md) — not a proportional calc chain */
+  --radius-sm: 0.25rem; /* 4px — data pills / mono badges */
+  --radius-md: 0.5rem; /* 8px — buttons */
+  --radius-lg: 0.5rem; /* 8px */
+  --radius-xl: 0.75rem; /* 12px — standard cards */
+  --radius-2xl: 1.25rem; /* 20px — large panels / modals */
+  --radius-3xl: 1.25rem;
+  --radius-4xl: 1.25rem;
+
+  /* Modular type scale, 1.250 ratio / 16px root */
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-2xl: 1.5625rem; /* 25px */
+  --text-3xl: 1.9375rem; /* 31px */
+  --text-4xl: 2.4375rem; /* 39px */
+  --text-5xl: 3.0625rem; /* 49px */
+  --text-6xl: 3.8125rem; /* 61px */
+  --text-7xl: 4.75rem; /* 76px */
+
+  --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 1px 0 rgba(255, 255, 255, 0.06) inset,
+    0 0 0 1px rgba(79, 224, 197, 0.25), 0 0 24px rgba(79, 224, 197, 0.08);
+}
+
+:root {
+  --background: #08090b;
+  --foreground: #f2f3f0;
+  --card: #101216;
+  --card-foreground: #f2f3f0;
+  --popover: #101216;
+  --popover-foreground: #f2f3f0;
+  --primary: #4fe0c5;
+  --primary-foreground: #08090b;
+  --secondary: #15171c;
+  --secondary-foreground: #f2f3f0;
+  --muted: #15171c;
+  --muted-foreground: #9a9fa6;
+  --accent: #15171c;
+  --accent-foreground: #f2f3f0;
+  --destructive: #e5484d;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: #4fe0c5;
+  --radius: 0.5rem;
+
+  --signal: #4fe0c5;
+  --warmth: #e8a94c;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Used by the Testimonials scroll-snap carousel — no Tailwind core utility for this. */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
