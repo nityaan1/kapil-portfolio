@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface ContainerProps extends React.ComponentProps<"div"> {
-  /** Full-bleed width (1440px) for canvases like the hero signal field. Default is the 1200px content width. */
+  /** Full-bleed width (1440px), for sections that want to run wider than body copy. Default is the 1200px content width. */
   full?: boolean;
 }
 

@@ -1,8 +1,12 @@
 # Product Requirements Document
 ## Executive Portfolio — Kapil Taneja
 
-Status: **Draft for approval — no code written yet.**
-Source of truth for all content: [`content-inventory.md`](./content-inventory.md)
+Status: **Historical.** This is the original planning document; several decisions below were superseded during the build. Source of truth for current content: [`content-inventory.md`](./content-inventory.md); current visual/IA decisions: [`design-system.md`](./design-system.md).
+
+**Known supersessions:**
+- §5 / M5 **AI Assistant** (`/api/assistant`, server-side Claude route handler) was built, then descoped and removed entirely. It was replaced by `components/search/command-palette.tsx` — a client-side, zero-API "Executive Search" over the same verified content, which eliminates the hallucination-risk surface §5 was written to manage.
+- §6 **Information Architecture**'s per-page routes (`/projects/[slug]`, a dedicated `/contact`) and §11 open items (Calendly link, QR code) were not built — the shipped site is the single-page scroll only, with `mailto:` in place of a booking link.
+- §7 **Visual Style Guide**'s dark cobalt/indigo direction was superseded first by `creative-direction.md`'s "Signal" concept, then by the current light "Executive Editorial" system in `design-system.md`.
 
 ---
 

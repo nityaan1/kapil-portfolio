@@ -33,7 +33,7 @@ export function SummaryBeat({ index, total, progress, text }: SummaryBeatProps) 
   return (
     <motion.p
       style={{ opacity, y }}
-      className="absolute inset-x-0 max-w-3xl text-xl font-medium leading-snug text-foreground sm:text-2xl lg:text-4xl"
+      className="absolute inset-x-0 max-w-3xl font-serif text-xl leading-snug text-foreground sm:text-2xl lg:text-4xl"
     >
       {text}
     </motion.p>

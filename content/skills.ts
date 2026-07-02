@@ -1,36 +1,51 @@
 /**
- * Skills, sourced from docs/content-inventory.md. Only two LinkedIn skills
- * have confirmed endorsement counts — the inventory explicitly flags the
- * other 23 as not yet extracted, so only these two get the hard-data
- * treatment. `capabilities` are real, LinkedIn-sourced self-described
- * strengths (Dell "Key Strengths" + HP "Executive Responsibilities" lists)
- * presented separately as qualitative, not endorsement-backed.
+ * Areas of Expertise, sourced verbatim from the "AREAS OF EXPERTISE" section
+ * of the CV supplied 2026-07-02 (docs/content-inventory.md) — four
+ * categories, three items each. Replaces the earlier LinkedIn-endorsement
+ * gauges, which the current CV doesn't corroborate.
  */
 
-export interface EndorsedSkill {
+export interface ExpertiseCategory {
   id: string;
   label: string;
-  endorsements: number;
+  items: string[];
 }
 
-/** Gauge scale for the radial meters — chosen so both real values sit legibly under it. */
-export const ENDORSEMENT_SCALE_MAX = 25;
-
-export const endorsedSkills: EndorsedSkill[] = [
-  { id: "key-account-management", label: "Key Account Management", endorsements: 18 },
-  { id: "team-management", label: "Team Management", endorsements: 23 },
-];
-
-export const capabilities: string[] = [
-  "CXO relationship development",
-  "Strategic account & territory planning",
-  "CSG + ISG solution positioning",
-  "Business trend analysis",
-  "Cross-functional leadership",
-  "Coaching & team enablement",
-  "Enterprise sales strategy & revenue leadership",
-  "High-performance team development",
-  "Strategic customer & partner engagement",
-  "Market intelligence & competitive alignment",
-  "Digital transformation across customer ecosystems",
+export const expertiseCategories: ExpertiseCategory[] = [
+  {
+    id: "growth-gtm",
+    label: "Strategic Growth & GTM Strategy",
+    items: [
+      "Enterprise GTM Architecture",
+      "Institutional BFSI Market Expansion",
+      "Recurring Revenue Optimization (ARR/MRR)",
+    ],
+  },
+  {
+    id: "digital-security",
+    label: "Digital & Security Transformation",
+    items: [
+      "Artificial Intelligence (AI) Adoption",
+      "Cybersecurity Commercialisation",
+      "Cloud & Digital Infrastructure Evolution",
+    ],
+  },
+  {
+    id: "ecosystem-governance",
+    label: "Ecosystem & Relationship Governance",
+    items: [
+      "Board & CXO Alliance Building",
+      "Strategic Partner Ecosystems",
+      "Co-Sell & Channel Orchestration",
+    ],
+  },
+  {
+    id: "executive-leadership",
+    label: "Executive Leadership & Scale",
+    items: [
+      "Cross-Functional Matrix Leadership",
+      "Fiscal Stewardship & P&L Optimization",
+      "High-Performance Talent Architecture",
+    ],
+  },
 ];

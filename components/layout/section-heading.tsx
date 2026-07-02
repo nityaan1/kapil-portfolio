@@ -18,11 +18,11 @@ export function SectionHeading({ index, title, description }: SectionHeadingProp
       whileInView="visible"
       viewport={{ once: true, amount: 0.6 }}
       variants={fadeInUp}
-      className="mb-16 flex items-baseline gap-4 lg:mb-24"
+      className="mb-16 flex items-baseline gap-4 border-b border-border pb-6 lg:mb-24"
     >
-      <span className="font-mono text-sm text-signal">{index}</span>
+      <span className="font-mono text-sm text-accent">{index}</span>
       <div>
-        <h2 className="text-3xl font-semibold tracking-tight text-foreground lg:text-4xl">
+        <h2 className="font-serif text-3xl tracking-tight text-foreground lg:text-4xl">
           {title}
         </h2>
         {description && (

@@ -1,5 +1,7 @@
 /**
- * Education, sourced from docs/content-inventory.md.
+ * Education, sourced from the CV supplied 2026-07-02
+ * (docs/content-inventory.md). Dates are omitted — the current CV doesn't
+ * state them, and this file does not assert facts it can't source.
  */
 
 export interface EducationEntry {
@@ -12,9 +14,8 @@ export interface EducationEntry {
 export const education: EducationEntry[] = [
   {
     id: "mba",
-    degree: "MBA, Sales & Marketing",
-    institution: "Amity University, Noida",
-    dates: "1999 – 2001",
+    degree: "Master's in Business Management",
+    institution: "Amity Business School",
   },
   {
     id: "bcom",

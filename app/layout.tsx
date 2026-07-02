@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Newsreader } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,16 +14,38 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+/** Editorial display serif for the hero name, section titles, and pull quotes — see docs/design-system.md. */
+const newsreader = Newsreader({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+});
+
+const TITLE = "Kapil Taneja — Strategic Account Head, Dell Technologies";
+const DESCRIPTION =
+  "23+ years scaling enterprise technology and BFSI businesses across Dell, HP, Vodafone Idea, and Airtel — turning CXO trust into sustained, measurable growth.";
+
 export const metadata: Metadata = {
-  // metadataBase: set once a production domain is confirmed (PRD open item #7)
-  title: "Kapil Taneja — Enterprise Account Director, Dell Technologies",
-  description:
-    "Two decades scaling enterprise technology businesses across Dell, HP, Vodafone Idea, and Airtel — turning CXO trust into sustained, measurable growth.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
-    title: "Kapil Taneja — Enterprise Account Director, Dell Technologies",
-    description:
-      "Two decades scaling enterprise technology businesses across Dell, HP, Vodafone Idea, and Airtel.",
+    title: TITLE,
+    description: DESCRIPTION,
     type: "profile",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
   },
 };
 
@@ -34,7 +57,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${newsreader.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         <TooltipProvider delay={200}>{children}</TooltipProvider>

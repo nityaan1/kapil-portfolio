@@ -6,22 +6,22 @@ import { timeline } from "@/content/timeline";
 import { Section } from "@/components/layout/section";
 import { Container } from "@/components/layout/container";
 import { SectionHeading } from "@/components/layout/section-heading";
-import { SignalSpine } from "@/components/timeline/signal-spine";
+import { TimelineSpine } from "@/components/timeline/timeline-spine";
 import { TimelineNode } from "@/components/timeline/timeline-node";
 
 export function CareerTimeline() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <Section id="timeline">
+    <Section id="timeline" navLabel="Timeline">
       <Container>
         <SectionHeading
           index="02"
           title="Career Timeline"
-          description="Six companies, twenty-five years — the chapters that built the operator."
+          description="Five companies, twenty-three years — the chapters that built the operator."
         />
         <div ref={containerRef} className="relative">
-          <SignalSpine containerRef={containerRef} />
+          <TimelineSpine containerRef={containerRef} />
           <div>
             {timeline.map((entry) => (
               <TimelineNode key={entry.id} entry={entry} />

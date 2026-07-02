@@ -1,13 +1,11 @@
 /**
- * Career timeline data, sourced from the "Career Timeline" section of
- * docs/content-inventory.md. Companies are the top-level chapters; roles
+ * Career timeline data, sourced from the CV supplied 2026-07-02
+ * (docs/content-inventory.md). Companies are the top-level chapters; roles
  * are nested underneath where a company spanned more than one title.
  *
- * Note: the CV lists the same $27M Data/Mobile Broadband figure under both
- * MTS and Bharti Airtel (an unreconciled duplication flagged in the
- * inventory's "Open items"). It's kept here only under MTS; the Airtel
- * "Regional Head" bullets below intentionally omit that figure rather than
- * assert an unconfirmed number twice.
+ * Note: the new CV attributes the $27M Data/Mobile Broadband P&L to Bharti
+ * Airtel alone (Dec 2002 – Aug 2011) and no longer lists MTS as a separate
+ * employer — the earlier MTS entry has been removed accordingly.
  */
 
 export interface TimelineRole {
@@ -32,13 +30,14 @@ export const timeline: TimelineEntry[] = [
     defaultExpanded: true,
     roles: [
       {
-        title: "Enterprise Account Director – Conglomerates",
+        title: "Strategic Account Head – Conglomerates",
         dates: "Jun 2025 – Present",
         bullets: [
-          "Manages strategic accounts across Dell's Customer Service Group (CSG) and Infrastructure Solutions Group (ISG)",
-          "Drives CXO-level engagement and expands share of wallet through multi-portfolio conversations",
-          "Leads and coaches a team of sales professionals and managers",
-          "Serves 500+ clients",
+          "Leads enterprise sales for strategic conglomerate accounts across Dell's Customer Solutions Group (CSG) and Infrastructure Solutions Group (ISG) in a highly matrixed, cross-functional environment",
+          "Coaches and mentors sales professionals to meet and exceed targets covering $200M in account revenue",
+          "Drives CXO-level engagement across conglomerate accounts to expand share of wallet through subscription and services-led selling motions",
+          "Owns account strategy, sales forecasting, and cross-functional alignment across Solutions Engineering, Customer Experience, and Finance",
+          "Identifies market trends and orchestrates specialized resources to position Dell as a differentiated technology partner",
         ],
       },
     ],
@@ -49,14 +48,14 @@ export const timeline: TimelineEntry[] = [
     dates: "Aug 2022 – Jun 2025",
     roles: [
       {
-        title: "Head of Enterprise Sales, West India",
+        title: "Zonal Head – Enterprise Accounts, West India",
         dates: "Aug 2022 – Jun 2025",
         bullets: [
-          "Shaped and executed enterprise sales strategy aligned to HP's strategic vision",
-          "Led high-impact sales teams through data-driven performance management",
-          "Built strategic customer and channel partnerships using market intelligence",
-          "Served 45+ clients",
-          "Completed the IIMB Pathbreaker executive education program (IIM Bangalore, HP-sponsored)",
+          "Led sales strategy, GTM execution, and team performance for Enterprise, Global Accounts, and GCC segments across West India",
+          "Managed a revenue budget of $210M across Enterprise, Global Accounts, and GCC through disciplined GTM execution and regular business reviews",
+          "Led and developed a team of 13 sales professionals, building the next generation of account leaders",
+          "Built and sustained executive-level relationships with customer CXOs and partners, improving NPS/CSAT through structured feedback loops and account planning",
+          "Deployed emerging endpoint technologies to enhance customer experience and defend market share against competition",
         ],
       },
     ],
@@ -67,47 +66,25 @@ export const timeline: TimelineEntry[] = [
     dates: "Sep 2013 – Aug 2022",
     roles: [
       {
-        title: "VP & National Sales Head, BFSI Vertical",
-        dates: "Jul 2020 – Feb 2022",
+        title: "VP, Global Enterprise & Head, Strategic Accounts Vertical",
+        dates: "2019 – Aug 2022",
         bullets: [
-          "Managed national operations generating $30M/annum across BFSI and global enterprise clients",
-          "Owned P&L and profitability for the vertical",
-          "Led customer experience and NPS improvement initiatives",
+          "Owned P&L and profitability up to $100M for BFSI and global enterprise clients, centred on subscription and services-lifecycle sales motions",
+          "Partnered with new-generation banking and financial services customers to build and scale new business lines supporting digital and security transformation",
+          "Built long-term CXO partnerships across BFSI accounts, driving technology adoption and upgrade cycles while improving customer NPS",
+          "Forecasted monthly and annual sales targets with strong accuracy, driving cross-functional initiatives that kept the business consistently on plan",
+          "Led teams of 14–35 across VP-era roles",
         ],
       },
       {
-        title: "Head for Global Enterprise",
-        dates: "Apr 2017 – Jul 2020",
+        title: "National Sales & Operations Head – Large Accounts",
+        dates: "Sep 2013 – 2019",
         bullets: [
-          "Managed $70M/annum in operations for global enterprise clients",
-          "Enabled client adoption of IoT, Smart Cities, Unified Communications, and Cloud",
-          "Owned national budget, forecast, and P&L with consistent year-on-year growth",
-        ],
-      },
-      {
-        title: "National Head, Sales & Operations – Large Accounts Vertical",
-        dates: "Aug 2013 – Mar 2017",
-        bullets: [
-          "Helped circle teams hit a $211M annual revenue budget with 23% average YoY growth",
-          "Grew orders 40% across the Top 100 customer accounts, including SBI, Future Group, and HDFC",
-          "Delivered 100% growth against new product revenue targets",
-          "Led a team that scaled from 14 to 35 people across VP-era roles",
-        ],
-      },
-    ],
-  },
-  {
-    id: "mts",
-    company: "MTS – Sistema Shyam Teleservices Ltd",
-    dates: "Sep 2011 – May 2013",
-    roles: [
-      {
-        title: "Regional Manager / Regional Head, North & East India",
-        bullets: [
-          "Owned $27M in revenue for Data (Mobile Broadband) products",
-          "Achieved RMS and CMS leadership in the circle through product planning and launch",
-          "Built data-centric usage and revenue enhancement programs across customer segments",
-          "Led churn management and retention through churn analytics",
+          "Delivered a $211M national revenue budget with 23% average YoY growth by selling enterprise-grade solutions to large national customers",
+          "Grew orders from Top-100 customers by 40% through targeted relationship and account-growth programs",
+          "Achieved 100% growth in new-product revenue nationally through ambitious go-to-market execution",
+          "Owned budget planning and execution across circles, maintaining positive NPS with large customers throughout",
+          "Led a team of 7+ direct reports",
         ],
       },
     ],
@@ -118,20 +95,14 @@ export const timeline: TimelineEntry[] = [
     dates: "Dec 2002 – Aug 2011",
     roles: [
       {
-        title: "Regional Head, North and East India",
+        title: "Regional Head, North & East India / Head – Acquisition",
+        dates: "Dec 2002 – Aug 2011",
         bullets: [
-          "Owned strategies to grow revenue, customer base, and new order bookings across circle teams",
-          "Launched programs to increase profitability across pre-paid and post-paid segments",
-          "Achieved RMS and CMS leadership while maintaining strong brand health scores",
-        ],
-      },
-      {
-        title: "Head – Acquisition (Circle & Corporate, multiple roles)",
-        bullets: [
-          "Managed the product life cycle for Data Broadband across the North Hub",
-          "Ran customer acquisition across 7 distributors, 200 key retail outlets, and a Modern Trade network",
-          "Led the Capex Optimization Project, transforming the organization from a Capex to a customer-owned model",
-          "Won a Gold Award for improving CSAT scores in complaint management",
+          "Owned $27M in Data (Mobile Broadband) revenue across North & East India, achieving RMS and CMS leadership in the circle",
+          "Conceived and launched new circle products, balancing ARPU against aggressive market and competitive positioning",
+          "Managed an indirect channel network of 7 distributors, 200 retail outlets, and 3 ARCs to drive acquisition and retention",
+          "Led the transformation from a Capex to a customer-owned model, reducing capital investment while sustaining growth",
+          "Won a Gold Award for driving CSAT improvement in Complaint Management",
         ],
       },
     ],
@@ -142,11 +113,10 @@ export const timeline: TimelineEntry[] = [
     dates: "May 2001 – Dec 2002",
     roles: [
       {
-        title: "Assistant Manager, Sales & Marketing",
+        title: "Assistant Manager – Sales & Marketing",
         bullets: [
-          "Owned sales targets for security products across Delhi and Punjab branches",
-          "Grew top-line revenue 10% annually, including new business with Spectranet, Ranbaxy, and O&M",
-          "Led client servicing, price negotiations, and competitive market research",
+          "Grew top-line revenue by 10% annually across Delhi and Punjab branches, securing new business with Spectranet, Ranbaxy, and O&M",
+          "Negotiated price increases and expanded service scope with existing clients through proactive account management",
         ],
       },
     ],

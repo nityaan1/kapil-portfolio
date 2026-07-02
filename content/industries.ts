@@ -1,8 +1,7 @@
 /**
- * Industry/domain exposure, sourced from docs/content-inventory.md's
- * "Industry/Domain Exposure" list. Each `context` line restates a fact
- * already established in the Career Timeline data — it does not introduce
- * anything new.
+ * Industry/domain exposure, sourced from the CV supplied 2026-07-02
+ * (docs/content-inventory.md). Trimmed to what the current CV substantiates
+ * — do not pad with domains only a prior LinkedIn export claimed.
  */
 
 export interface Industry {
@@ -18,58 +17,28 @@ export const industries: Industry[] = [
     context: "Enterprise technology sales leadership at Dell Technologies and HP Inc.",
   },
   {
-    id: "telecom",
+    id: "telecommunications",
     label: "Telecommunications",
-    context: "Two decades across Bharti Airtel, MTS, and Vodafone Idea.",
+    context: "Two decades across Bharti Airtel and Vodafone Idea.",
   },
   {
     id: "bfsi",
-    label: "BFSI",
-    context: "Led Vodafone Idea's BFSI vertical as VP & National Sales Head, serving clients including SBI and HDFC.",
+    label: "BFSI & Financial Services",
+    context: "Trusted-advisor relationships with conglomerate boards and BFSI CXOs, expanding wallet share within Top-100 accounts.",
   },
   {
-    id: "iot",
-    label: "IoT",
-    context: "Enabled enterprise adoption of IoT solutions as Head for Global Enterprise at Vodafone Idea.",
-  },
-  {
-    id: "smart-cities",
-    label: "Smart Cities",
-    context: "Helped enterprise clients adopt Smart Cities solutions at Vodafone Idea's Global Enterprise business.",
-  },
-  {
-    id: "unified-comms",
-    label: "Unified Communications",
-    context: "Enabled client adoption of Unified Communications at Vodafone Idea's Global Enterprise business.",
-  },
-  {
-    id: "cloud",
-    label: "Cloud",
-    context: "Enabled client adoption of Cloud technologies at Vodafone Idea's Global Enterprise business.",
-  },
-  {
-    id: "enterprise-networking",
-    label: "Enterprise Networking",
-    context: "Built and scaled enterprise networking solutions across Bharti Airtel and Vodafone Idea.",
+    id: "cloud-infrastructure",
+    label: "Cloud & Digital Infrastructure",
+    context: "Positioned high-value infrastructure suites driving cloud-led digital transformation for enterprise clients.",
   },
   {
     id: "cybersecurity",
-    label: "Cybersecurity & Data Protection",
-    context: "Part of the enterprise portfolio he leads today at Dell Technologies.",
+    label: "Cybersecurity",
+    context: "Commercialised advanced cybersecurity suites as part of client modernization cycles.",
   },
   {
-    id: "servers-compute",
-    label: "Servers & Compute",
-    context: "Core to the Client Service Group and Infrastructure Solutions Group portfolio he manages at Dell.",
-  },
-  {
-    id: "end-point-devices",
-    label: "End Point Devices",
-    context: "End-user computing focus across his HP and Dell enterprise sales roles.",
-  },
-  {
-    id: "ai-transformation",
-    label: "AI-Driven Transformation",
-    context: "Champions AI-driven modernization for customer organizations in his current role at Dell.",
+    id: "ai",
+    label: "Artificial Intelligence",
+    context: "Securing rapid market adoption of AI as part of emerging-tech commercialisation.",
   },
 ];

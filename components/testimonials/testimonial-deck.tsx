@@ -53,11 +53,11 @@ export function TestimonialDeck() {
   }
 
   return (
-    <Section id="testimonials">
+    <Section id="testimonials" navLabel="Testimonials">
       <Container>
         <div className="flex items-end justify-between">
           <SectionHeading
-            index="09"
+            index="08"
             title="Testimonials"
             description="Five real recommendations, full attribution, nothing trimmed."
           />
@@ -108,7 +108,7 @@ export function TestimonialDeck() {
               onClick={() => scrollToIndex(index)}
               className={cn(
                 "h-1.5 rounded-full transition-all duration-300",
-                index === activeIndex ? "w-6 bg-signal" : "w-1.5 bg-border"
+                index === activeIndex ? "w-6 bg-accent" : "w-1.5 bg-border"
               )}
             />
           ))}

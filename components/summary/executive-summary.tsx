@@ -29,7 +29,7 @@ export function ExecutiveSummary() {
 
   if (reducedMotion) {
     return (
-      <section id="summary" className="scroll-mt-24 py-24 lg:py-40">
+      <section id="summary" data-nav-label="Summary" className="scroll-mt-24 py-24 lg:py-40">
         <Container>
           <SectionHeading index="01" title="Executive Summary" />
           <motion.div
@@ -43,7 +43,7 @@ export function ExecutiveSummary() {
               <motion.p
                 key={beat}
                 variants={fadeInUp}
-                className="max-w-3xl text-2xl font-medium leading-snug text-foreground"
+                className="max-w-3xl font-serif text-2xl leading-snug text-foreground"
               >
                 {beat}
               </motion.p>
@@ -57,6 +57,7 @@ export function ExecutiveSummary() {
   return (
     <section
       id="summary"
+      data-nav-label="Summary"
       ref={containerRef}
       className="relative scroll-mt-24"
       style={{ height: `${summaryBeats.length * 70}vh` }}

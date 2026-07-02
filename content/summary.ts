@@ -1,12 +1,12 @@
 /**
  * Narrative beats for the Executive Summary section — a documentary-style
- * condensation of the verified Executive Summary paragraph in
+ * condensation of the verified Professional Summary paragraph in
  * docs/content-inventory.md, not a paraphrase that adds anything new.
  */
 export const summaryBeats: string[] = [
-  "Two decades in enterprise technology and telecom — Dell, HP, Vodafone Idea, Airtel.",
-  "Steering large, complex businesses. Driving sustained revenue growth. Shaping customer-centric transformation at scale.",
-  "Strategic clarity. Stakeholder alignment. Teams built to consistently outperform.",
-  "A trusted advisor to CXOs — across IoT, Smart Cities, Unified Communications, Cloud, and enterprise networking.",
-  "Today, at Dell Technologies: championing AI-driven innovation across customer organizations.",
+  "23+ years building and running large, complex technology and telecom businesses — Dell Technologies, HP Inc., Vodafone Idea, Bharti Airtel.",
+  "Direct P&L ownership for BFSI and global enterprise accounts up to $200M. Go-to-market strategy across matrixed organizations.",
+  "Built and led high-performing sales teams of up to 35 — developing the next generation of account leaders, not just clearing budgets.",
+  "A trusted advisor to CXOs — guiding digital transformation, cloud, security, and AI-led modernization.",
+  "Some of the proudest wins are the teams built along the way, not just the budgets cleared.",
 ];

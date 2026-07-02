@@ -1,6 +1,7 @@
 /**
- * Awards & certifications, sourced from docs/content-inventory.md. Exactly
- * two credentials exist — do not pad this list.
+ * Awards & recognition. The Gold Award is confirmed in the CV supplied
+ * 2026-07-02; IIMB Pathbreaker isn't in that CV but is confirmed directly by
+ * the user and restored per their request (docs/content-inventory.md).
  */
 
 export interface AwardEntry {
@@ -18,7 +19,7 @@ export const awards: AwardEntry[] = [
     type: "Award",
     title: "Gold Award — CSAT Improvement",
     issuer: "Bharti Airtel Limited",
-    context: "Recognized for contribution to improving CSAT scores in complaint management.",
+    context: "Recognized for driving CSAT improvement in Complaint Management.",
     era: "2002 – 2011",
   },
   {
